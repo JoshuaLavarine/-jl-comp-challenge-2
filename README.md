@@ -1,1 +1,1 @@
-# -jl-comp-challenge-2
+# jl-comp-challenge-2
