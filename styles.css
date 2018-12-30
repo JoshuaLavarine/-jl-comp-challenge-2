@@ -34,6 +34,33 @@ aside {
 
 .aside-main {
   grid-area: aside-main;
+  display: grid;
+  grid-template-areas: 
+    "home"
+    "jobs"
+    "resumes"
+    "tasks"
+    "calendar";
+}
+
+.home {
+  grid-area: home;
+}
+
+.jobs {
+  grid-area: jobs;
+}
+
+.resumes {
+  grid-area: resumes;
+}
+
+.tasks {
+  grid-area: tasks;
+}
+
+.calendar {
+  grid-area: calendar;
 }
 
 .aside-admin {
@@ -76,6 +103,33 @@ main {
 .resume {
   border: 1px black solid;
   grid-area: resume;
+  display: grid;
+  grid-template-areas: 
+    "resume-description resume-answer"
+  /*grid-template-areas: 
+    "job-description job-description-info"
+    "position-title  position-title-info"
+    "location        location-info"
+    "employment-type employment-type-info"
+    "experience      experience-info"
+    "status          status-info"
+    "description     description-info "
+    "hiring-lead     hiring-lead-info"
+    "approved-salary approved-salary-info"*/
+}
+
+.resume-description {
+  grid-area: resume-description;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.resume-answer {
+  grid-area: resume-answer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .social {
@@ -99,6 +153,25 @@ main {
 
 .summary-bar {
   border: black 1px solid;
+  display: grid;
+  grid-template-areas: 
+    ".     ."
+    "title summary-btn"
+    "tabs  tabs"
+}
+
+.title {
+  grid-area: title;
+}
+
+.summary-btn {
+  grid-area: summary-btn;
+}
+
+.tabs {
+  grid-area: tabs;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-item {
@@ -120,3 +193,8 @@ main {
 
 }
 
+.icon {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+}
