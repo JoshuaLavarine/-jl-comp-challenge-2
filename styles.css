@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Lato', sans-serif;
+
 }
 
 body {
@@ -105,31 +107,77 @@ main {
   grid-area: resume;
   display: grid;
   grid-template-areas: 
-    "resume-description resume-answer"
-  /*grid-template-areas: 
-    "job-description job-description-info"
-    "position-title  position-title-info"
-    "location        location-info"
-    "employment-type employment-type-info"
-    "experience      experience-info"
-    "status          status-info"
-    "description     description-info "
-    "hiring-lead     hiring-lead-info"
-    "approved-salary approved-salary-info"*/
+    ". job-description"
+    ". position-title"
+    ". location"
+    ". employment-type"
+    ". experience"
+    ". status"
+    ". description"
+    ". hiring-lead"
+    ". approved-salary";
+  grid-template-rows: repeat(6, 4.6rem) 9rem repeat(2, 4.6rem); 
+  grid-template-columns: 5.3rem 1fr;
 }
 
-.resume-description {
-  grid-area: resume-description;
+/*.resume-items {
+  padding-top: 1.5rem;
+}
+*/
+.job-description {
+  grid-area: job-description;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  padding-top: 1.5rem;  
+  /*background-color: #6E7E95;*/
 }
 
-.resume-answer {
-  grid-area: resume-answer;
+.position-title {
+  grid-area: position-title;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  padding-top: 1.5rem;
+
+}
+
+.location {
+  grid-area: location;
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.employment-type {
+  grid-area: employment-type;
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.experience {
+  grid-area: experience;
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.status {
+  grid-area: status;
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.description {
+  grid-area: description;
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.hiring-lead {
+  grid-area: hiring-lead;
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.approved-salary {
+  grid-area: approved-salary;
+  display: flex;
+  padding-top: 1.5rem;
 }
 
 .social {
@@ -197,4 +245,13 @@ main {
   height: 2rem;
   width: 2rem;
   color: white;
+}
+
+.edit {
+ display: inline;
+}
+
+.pencil {
+  width: 1rem;
+  height: 1rem;
 }
