@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title></title>
   </head>
@@ -33,25 +35,25 @@
         </article>
         <article class="tabs">
           <p>
-            Summary
+            SUMMARY
           </p>
           <p>
-            Applicants
+            APPLICANTS
           </p>
           <p>
-            Job Board
+            JOB BOARD
           </p>
           <p>
-            Interviews
+            INTERVIEWS
           </p>
           <p>
-            Activity
+            ACTIVITY
           </p>
           <p>
-            Broadcast 
+            BROADCAST 
           </p>
           <p>
-            Notifications
+            NOTIFICATIONS
           </p>
         </article>
         <article class="summary-btn">
@@ -63,16 +65,26 @@
       </section>
     </nav>
     <aside>
-      <section class="aside-header">
-        <img src="images/newt.png" class="round-image">
-        <article>
-          <p>Newt Scamander</p>
-          <img src="icons/down-arrow.svg" class="icon">
-        </article>
-      </section>
+      <div class="aside-header-flex">
+        <section class="aside-header">
+          <img src="images/newt.png" class="round-image newt-img">
+          <article class="newt-text">
+            <p class="inline ">Newt Scamander</p>
+            <img src="icons/down-arrow.svg" class="newt-icon inline">
+          </article>
+        </section>
+      </div>
+
+
+
+
+
+
       <section class="aside-main">
-        Main
-        <article>
+        <p class="main">
+          MAIN
+        </p>
+        <article class="main-items">
           <div class="home">
             <img src="icons/aside/home.svg" class="icon">
             <a href="">HOME</a>
@@ -94,6 +106,12 @@
             <a href="">CALENDAR</a>        
           </div>
       </section>
+
+
+
+
+
+
       <section class="aside-admin">
         Admin
         <article>
@@ -142,74 +160,159 @@
       </section>
     </aside>
     <main>
-      <section class="chart">chart</section>
+      <section class="chart">
+        <img src="images/bar-graph.png">
+      </section>
       <section class="resume">
-        <article class="resume-description">
-          <p>
+        <article class="job-description">
+          <p class="job-title">
             JOB DESCRIPTION
           </p>
-          <p>
-            POSITION TITLE
-          </p>
-          <p>
-            LOCATION
-          </p>
-          <p>
-            EMPLOYMENT TYPE
-          </p>
-          <p>
-            EXPERIENCE
-          </p>
-          <p>
-            STATUS
-          </p>
-          <p>
-            DESCRIPTION
-          </p>
-          <p>
-            HIRING LEAD
-          </p>
-          <p>
-            APPROVED SALARY
-          </p>
-        </article>
-        <article class="resume-answer">
-          <div>
-            <img src="">
-            <p>
+          <div class="edit-btn">
+            <img src="icons/edit.svg" class="icon edit pencil">
+            <p class="edit">
               EDIT
             </p>
           </div>
-          <p>
+        </article>
+        <article class="position-title">
+          <p class="para-size resume-question">
+            POSITION TITLE
+          </p>
+          <p class="para-size resume-answer">
             Care of Magical Creatures Teacher
-          </p>  
-          <p>
+          </p> 
+        </article> 
+        <article class="location">
+          <p class="para-size resume-question">
+            LOCATION
+          </p>
+          <p class="para-size resume-answer">
             Hogwarts, Scotland, UK
           </p>
-          <p>
+        </article>
+        <article class="employment-type">
+          <p class="para-size resume-question">
+            EMPLOYMENT TYPE
+          </p>
+          <p class="para-size resume-answer">
             Full-time (September 1 to the third week of June)
           </p>
-          <p>
+        </article>
+        <article class="experience">
+          <p class="para-size resume-question">
+            EXPERIENCE
+          </p>
+          <p class="para-size resume-answer">
             Senior-level
           </p>
-          <p>
+        </article>
+        <article class="status">
+          <p class="para-size resume-question">
+            STATUS
+          </p>
+          <p class="para-size resume-answer">
             Open
           </p>
-          <p>
+        </article>
+        <article class="description">
+          <p class="para-size resume-question">
+            DESCRIPTION
+          </p>
+          <p class="para-size resume-answer">
             Care of Magical Creatures is an elective course at Hogwarts School of Witchcraft and Wizardry that can be chosen by students in their third year. In the class, students learn about a wide range of magical creatures, from flobberworms to fire crabs, and even unicorns and thestrals. Students are taught about feeding, maintaining, breeding, and proper treatment of these creatures.
           </p>
-          <div>
-            <img src="images/albus.png">
-            <p>
+        </article>
+        <article class="hiring-lead">
+          <p class="resume-question para-size hiring">
+            HIRING LEAD
+          </p>
+          <div class="display-relative">
+            <img class="albus-img" src="images/albus.png">
+            <p class="para-size albus-txt">
               Albus Percival Wulfric Brian Dumbledore
             </p>
           </div>
-          <p>
+        </article>
+        <article class="approved-salary">
+          <p class="resume-items resume-question para-size">
+            APPROVED SALARY
+          </p>
+          <p class="para-size resume-answer">
             31,250 Galleons (meals and living expenses included)
           </p>
         </article>
       </section>
-      <section class="social">social</section>
+      <section class="social">
+        <div class="social-buttons">
+          <article class="facebook social-btn social-btns">
+            <i class="fab fa-facebook-f"></i>
+            <p class="social-btn post-facebook ">Post to Facebook</p>
+          </article>
+          <article class="twitter social-btn social-btns">
+            <i class="fab fa-twitter social-btn"></i>
+            <p class="social-btn post-twitter">Tweet this Job</p>
+          </article>
+          <article class="linkedin social-btn social-btns">
+            <i class="fab fa-linkedin social-btn"></i>
+            <p class="social-btn post-linkedin">Post to Linkedin</p>
+          </article>
+        </div>
+        <div class="job-link">
+          <p class="job-link-header"> 
+            <i class="fas fa-globe-americas"></i>
+            Link to this Job
+          </p>
+          <p class="job-link-main">
+            Draco dormiens nunquam titillandus 
+            <p class="job-link-translation">
+              ("Never Tickle a Sleeping  Dragon")
+            </p>
+          </p>
+          <div class="copy-link">
+            <input class="copy-job-link"type="text" name="" placeholder="hogwartsismyhome.co.uk">
+            <button>
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="job-link">
+          <p class="job-link-header"> 
+            <i class="fas fa-globe-americas"></i>
+            Link to this Job
+          </p>
+          <p class="job-link-main">
+            Draco dormiens nunquam titillandus 
+            <p class="job-link-translation">
+              ("Never Tickle a Sleeping  Dragon")
+            </p>
+          </p>
+          <div class="copy-link">
+            <input class="copy-job-link"type="text" name="" placeholder="hogwartsismyhome.co.uk">
+            <button>
+              Copy
+            </button>
+          </div>
+        </div>
+        <div class="resume-link ">
+          <p class="job-link-header"> 
+            <i class="fas fa-paper-plane"></i>
+            Upload Resumes by Email
+          </p>
+          <p class="job-link-main">
+            Draco dormiens nunquam titillandus 
+            <p class="job-link-translation">
+              ("Never Tickle a Sleeping  Dragon")
+            </p>
+          </p>
+          <div class="copy-link">
+            <input class="copy-job-link"type="text" name="" placeholder="hogwartsismyhome.co.uk">
+            <button>
+              Copy
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
