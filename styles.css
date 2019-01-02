@@ -1,50 +1,49 @@
 * {
-  padding: 0;
-  margin: 0;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  /*background-image: url("back-placeholder1.png");*/
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas:
     "aside nav  nav"
     "aside main main"
     "aside main main";
-  grid-template-rows: 18%;
   grid-template-columns: 15% 1fr 1fr;
-  width: 92.75%;
+  grid-template-rows: 18%;
   height: 96rem;
+  width: 92.75%;
 }
 
 aside {
-  border: 1px black solid;
-  grid-area: aside;
+  background: #354051;
   display: grid;
+  grid-area: aside;
   grid-template-areas: 
     "aside-header"
     "aside-main"
     "aside-admin"
     "aside-categories";
   grid-template-rows: 9.3rem 15rem 24rem 1fr;
-  background: #354051;
 }
 
 .aside-header {
-  grid-area: aside-header;
   display: grid;
+  grid-area: aside-header;
   grid-template-areas: 
     ".        newt-img  ."
     "newt-txt newt-txt  newt-txt";
   grid-template-columns: 3rem 1fr 3rem;
-  padding-top: 2.2rem;
   padding-left: .5rem;
+  padding-top: 2.2rem;
 }
 
 .aside-header-flex {
-  height: 5rem;
+  border-bottom: 1px black solid;
+  height: 11.3rem;
 }
 
 .newt-img {
@@ -52,13 +51,13 @@ aside {
 }
 
 .newt-text {
-  grid-area: newt-txt;
-  width: 100%;
+  color: #AAB5C7;
   font-size: 14px;
+  font-weight: bold;
+  grid-area: newt-txt;
   padding-left: 2.3rem;
   padding-top: 1.1rem;
-  color: #AAB5C7;
-  font-weight: bold;
+  width: 100%;
 }
 
 .newt-icon {
@@ -69,114 +68,99 @@ aside {
 display: inline
 }
 
-/*.aside-main {
-  grid-area: aside-main;
-  display: grid;
-  grid-template-areas: 
-    ".  main"
-    ".  home"
-    ".  jobs"
-    ".  resumes"
-    ".  tasks"
-    ".  calendar";
-  grid-template-columns: 1.5rem 1fr;
-  grid-template-rows: 1.2fr 2fr 2fr 2fr 2fr 2fr;
-}*/
+.aside-main {
+  border-bottom: 1px solid black;
+  height: 19.45rem;
+}
 
 .main {
+  color: #9EA9BB;
+  display: block;
   font-size: 12px;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  /*border: 1px black solid;*/
-  display: block;
   margin-top: 3.7rem;
-  color: #9EA9BB;
 }
 
 .home {
-  grid-area: home;
   display: flex;
-  margin-top: 1.4rem;
+  grid-area: home;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .jobs {
+  display: flex;
   grid-area: jobs;
-    display: flex;
-
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
-
+  margin-top: 1.4rem;
 }
 
 .resumes {
+  display: flex;
   grid-area: resumes;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
-    display: flex;
-
-
+  margin-top: 1.4rem;
 }
 
 .tasks {
+  display: flex;
   grid-area: tasks;
-    display: flex;
-
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .calendar {
+  display: flex;
   grid-area: calendar;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
-    display: flex;
-
+  margin-top: 1.4rem;
 }
 
 .aside-admin {
+  border-bottom: 1px solid black;
   grid-area: aside-admin;
+  height: 16rem;
   margin-top: 6.4rem;
 }
 
 .admin {
+  color: #9EA9BB;
+  display: block;
   font-size: 12px;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  /*border: 1px black solid;*/
-  display: block;
   margin-top: 0rem;
-  color: #9EA9BB;
 }
 
 .admin-users {
   display: flex;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .admin-locations {
   display: flex;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .admin-workflows {
   display: flex;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .admin-job-boards {
   display: flex;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .admin-social {
-    display: flex;
-  margin-top: 1.4rem;
+  display: flex;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .aside-categories {
@@ -184,96 +168,127 @@ display: inline
 }
 
 .categories-header {
+  color: #9EA9BB;
+  display: block;
   font-size: 12px;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  /*border: 1px black solid;*/
-  display: block;
   margin-top: 0.4rem;
-  color: #9EA9BB;
 }
 
 .categories-administrative {
   display: flex;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .categories-design {
   display: flex;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .categories-executive {
   display: flex;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 .categories-hr {
   display: flex;
-  margin-top: 1.4rem;
   margin-left: 1.5rem;
+  margin-top: 1.4rem;
 }
 
-
-
 a {
-  text-decoration: none;
-  font-size: 12px;
-  padding-top: .2rem;
-  margin-left: .8rem;
   color: #9EA9BB;
+  font-size: 12px;
+  margin-left: .8rem;
+  padding-top: .2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFF;
 }
 
 nav {
-  border: 1px black solid;
-  grid-area: nav;
   display: grid;
+  grid-area: nav;
   grid-template-areas: 
     "search-bar"
     "summary-bar";
-  grid-template-rows: 30% 1fr;
   grid-template-columns: 1fr;
+  grid-template-rows: 30% 1fr;
 }
 
 main {
-  border: 1px black solid;
+  background-color: #EDF2F6;
+  color: #9DA1A8;
   display: grid;
   grid-area: main;
   grid-template-areas: 
     "chart  chart"
     "resume social"
     "resume social";
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 34.25%;
-  /*background-color: #EDF2F6;*/
-  color: #9DA1A8;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .chart {
-  border: 1px black solid;
   grid-area: chart;
+}
+
+.bottom-chart {
+  align-items: flex-end;
   display: flex;
-  /*background-color: #EDF2F6;*/
-  height: 100%;
-  width: 100%;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.top-chart {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+
+.applicants-summary-icon {
+  border-radius: 40px;
+  font-size: 12px;
+  height: 2.3rem;
+  margin-right: 11rem;
+  width: 9.4rem;
+}
+
+.total-summary-icon {
+  border-radius: 40px;
+  font-size: 12px;
+  height: 2.3rem;
+  margin-left: 12.75rem;
+  width: 13rem;
 }
 
 .bar-graph {
+  height: 15rem;
+  margin-bottom: 1.2rem;
+  margin-right: 3.4rem;
   width: auto;
-  height: 260px;
-  margin-right: .3rem;
-  margin-bottom: .3rem;
+}
+
+.circle-graph {
+  height: 14.1rem;
+  margin-bottom: 1.2rem;
+  margin-left: 0rem;
+  width: auto;
 }
 
 .resume {
-  /*border: 1px black solid;*/
   background-color: #EEF0F2;
-  grid-area: resume;
   display: grid;
+  grid-area: resume;
   grid-template-areas: 
     ". job-description job-description job-description"
     ". position-title  position-title  filler"
@@ -284,8 +299,8 @@ main {
     ". description     description     filler"
     ". hiring-lead     hiring-lead     filler"
     ". approved-salary approved-salary filler";
-  grid-template-rows: repeat(6, 4.6rem) 9rem 4.6rem 4.6rem; 
   grid-template-columns: 3.15rem 1rem 1fr 2rem;
+  grid-template-rows: repeat(6, 4.6rem) 9rem 4.6rem 4.6rem; 
 }
 
 .filler {
@@ -298,44 +313,44 @@ main {
 }
 
 .resume-question {
+  height: 4rem;
   padding-top: .5rem;
   width: 9.5rem;
-  height: 4rem;
 }
 
 .resume-answer {
-  width: 27rem;
-  padding-top: .1rem;
   line-height: 1.45rem;
+  padding-top: .1rem;
+  width: 27rem;
 }
 
 .job-description {
-  grid-area: job-description;
-  display: flex;
   background-color: #6E7E95;
   color: #E7F1FC;
+  display: flex;
+  grid-area: job-description;
 }
 
 .job-title {
-  margin-right: .75rem;
   margin-left: 2rem;
+  margin-right: .75rem;
   padding-top: 1.5rem;
 }
 
 .edit-btn {
   background-color: #7B8AA6;
-  padding: .5rem;
   height: 1rem;
   margin-top: 1rem;
-}
+  padding: .5rem;
+} 
 
 .position-title {
-  grid-area: position-title;
-  display: flex;
-  padding-top: 1.5rem;
-  border-bottom: 2px #F3F3F3 solid;
-  padding-left: 2rem;
   background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
+  display: flex;
+  grid-area: position-title;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
 }
 
 .hiring {
@@ -343,65 +358,64 @@ main {
 }
 
 .location {
-  grid-area: location;
   display: flex;
+  grid-area: location;
   padding-top: 1.5rem;
 }
 
 .location-resume {
-  grid-area: location;
-  display: flex;
-  padding-top: 1.5rem;
-  border-bottom: 2px #F3F3F3 solid;
-  padding-left: 2rem;
   background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
+  display: flex;
+  grid-area: location;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
 }
 
 .employment-type {
-  grid-area: employment-type;
-  display: flex;
-  padding-top: 1.5rem;
-  border-bottom: 2px #F3F3F3 solid;
-  padding-left: 2rem;
   background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
+  display: flex;
+  grid-area: employment-type;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
 }
 
 .experience {
-  grid-area: experience;
-  display: flex;
-  padding-top: 1.5rem;
-  border-bottom: 2px #F3F3F3 solid;
-  padding-left: 2rem;
   background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
+  display: flex;
+  grid-area: experience;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
 }
 
 .status {
-  grid-area: status;
-  display: flex;
-  padding-top: 1.5rem;
-  border-bottom: 2px #F3F3F3 solid;
-  padding-left: 2rem;
   background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
+  display: flex;
+  grid-area: status;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
 }
 
 .description {
-  grid-area: description;
-  display: flex;
-  padding-top: 1.5rem;
-  border-bottom: 2px #F3F3F3 solid;
-  height: 10rem;
-  padding-left: 2rem;
   background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
+  display: flex;
+  grid-area: description;
+  padding-bottom: 7rem;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
 }
 
 .hiring-lead {
+  background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
   display: flex;
   grid-area: hiring-lead;
-  padding-top: 3.2rem;
-  border-bottom: 2px #F3F3F3 solid;
-  height: 4rem;
   padding-left: 2rem;
-  background-color: #FFF;
+  padding-top: 1rem;
 }
 
 .albus-img {
@@ -412,35 +426,34 @@ main {
 }
 
 .albus-txt {
-  padding-top: .7rem;
   padding-left: 3.45rem;
+  padding-top: .7rem;
 }
 
 .approved-salary {
-  grid-area: approved-salary;
+  background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
   display: flex;
-  padding-top: 4rem;
-  border-bottom: 2px #F3F3F3 solid; 
+  grid-area: approved-salary;
   height: 3rem;
   padding-left: 2rem;
-  background-color: #FFF;
+  padding-top: 1.6rem;
 }
 
 .social {
-  grid-area: social;
+  background-color: #EDF2F6;
   display: flex;
   flex-direction: column;
-  background-color: #EDF2F6;
-
+  grid-area: social;
 }
 
 .social-buttons {
-  width: 17.75rem;
-  height: 11.4rem;
   display: flex;
   flex-direction: column;
+  height: 11.4rem;
   justify-content: space-between;
   padding-left: 3.1rem;
+  width: 17.75rem;
 }
 
 .social-btn {
@@ -448,62 +461,62 @@ main {
 }
 
 .facebook {
-  box-sizing: border-box;
-  background-color: #4B71C2;
-  justify-content: center;
-  height: 2.75rem;
-  display: flex;
-  justify-content: flex-start;
   align-items: all;
+  background-color: #4B71C2;
+  box-sizing: border-box;
+  display: flex;
+  height: 2.75rem;
+  justify-content: center;
+  justify-content: flex-start;
   padding-left: 1.6rem;
   padding-top: .75rem;
 }
 
 .post-facebook {
-  margin-left: 3.2rem;
   font-size: 15px;
+  margin-left: 3.2rem;
 }
 
 .twitter {
+  align-items: all;
   background-color: #00ABF0;
   box-sizing: border-box;
-  justify-content: center;
-  height: 2.75rem;
   display: flex;
+  height: 2.75rem;
+  justify-content: center;
   justify-content: flex-start;
-  align-items: all;
   padding-left: 1.6rem;
   padding-top: .6rem;
 }
 
 .post-twitter {
-  margin-left: 2.75rem;
   font-size: 15px;
+  margin-left: 2.75rem;
 }
 
 .linkedin {
+  align-items: all;
   background-color: #067FBC;
   box-sizing: border-box;
-  justify-content: center;
-  height: 2.75rem;
   display: flex;
+  height: 2.75rem;
+  justify-content: center;
   justify-content: flex-start;
-  align-items: all;
   padding-left: 1.6rem;
   padding-top: .65rem;
 }
 
 .post-linkedin {
-  margin-left: 3.1rem;
   font-size: 15px;
+  margin-left: 3.1rem;
 }
 
 .job-link {
+  border-bottom: 2px #DEE3E9 solid;
+  height: 11.1rem;
   margin-left: 3.4rem;
   margin-right: 3.1rem;
-  height: 11.1rem;
   margin-top: 2.2rem;
-  border-bottom: 2px #DEE3E9 solid;
 }
 
 .job-link-header {
@@ -515,15 +528,19 @@ main {
 }
 
 .job-link-main {
-  margin-top: 1rem;
   font-size: 13px;
+  margin-top: 1rem;
 }
 
 .job-link-translation {
-  margin-top: .4rem;
   font-size: 13px;
   margin-bottom: 1.5rem;
+  margin-top: .4rem;
+}
 
+.aside-hover:hover {
+  background-color: #2F394A;
+  border-left: 2px solid #1C85BD;
 }
 
 .copy-link {
@@ -531,10 +548,10 @@ main {
 }
 
 .copy-btn {
-  width: 23.5%;
-  height: 3rem;
   background-color: #48B6C2;
   color: #FFF;
+  height: 3rem;
+  width: 23.5%;
 }
 
 .copy-job-link {
@@ -546,9 +563,9 @@ main {
 }
 
 .resume-link {
+  height: 11.1rem;
   margin-left: 3.4rem;
   margin-right: 3.1rem;
-  height: 11.1rem;
   margin-top: 2.0rem;
 }
 
@@ -556,11 +573,10 @@ main {
   margin-right: .255rem;
 }
 
-
 .round-image {
   border-radius: 100%;
-  width: 5rem;
   height: 5rem;
+  width: 5rem;
 }
 
 .search-bar {
@@ -572,7 +588,6 @@ main {
 .nav-item {
   width: 2rem;
   height: 2rem;
-  /*padding-top: 1rem;*/
 }
 
 .nav-hamburger {
@@ -584,47 +599,53 @@ main {
 }
 
 .nav-four-buttons {
-  box-sizing: border-box;
   border-left: #f2f2f2 2px solid;
-  padding: 2rem;
+  border-right: #f2f2f2 2px solid;
+  box-sizing: border-box;
   color: #9EA3AF;
+  padding: 2rem;
 }
 
 .calendars {
-  box-sizing: border-box;
   border-left: #f2f2f2 2px solid;
-  padding: 2rem;
+  box-sizing: border-box;
   color: #9EA3AF;
+  padding: 2rem;
 }
 
 .nav-add-profile {
-  box-sizing: border-box;
   border-left: #f2f2f2 2px solid;
-  padding: 2rem;
+  box-sizing: border-box;
   color: #9EA3AF;
+  padding: 2rem;
 }
 
+.nav-square:hover {
+  background-color: #19a3f8;
+  color: #FFF;
+}
+
+.round-summary-icon:hover {
+  background-color: #9da2ad21;
+}
 
 .nav-search {
-  width: 20rem;
+  background-color: #FEFEFE; 
+  border: none;
+  display: flex;
+  height: 5rem;
   margin-left: 0rem;
   padding-left: .3rem;
-  height: 5rem;
-  display: flex;
-  border: none;
-  background-color: #FEFEFE; 
+  width: 20rem;
 }
 
 .fa-search {
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  color: #9EA3AF;
-  /*border: 1px #9EA3AF solid;*/
-  /*width: 5rem;*/
-  padding: 1.65rem .1rem 1.65rem 1.65rem;
-  border: none;
   background-color: #FFF;
-;
+  border: none;
+  box-sizing: border-box;
+  color: #9EA3AF;
+  font-size: 1.5rem;
+  padding: 1.65rem .1rem 1.65rem 1.65rem;
 }
 
 .left-arrow {
@@ -636,24 +657,22 @@ main {
 }
 
 .hamburger-and-arrow {
+  border-right: 1px #f2f2f2 solid;
   padding-left: 1.6rem;
-  /* margin-right: 1.5rem; */
   padding-right: 1.6rem;
   padding-top: 1.6rem;
-  border-right: 1px #f2f2f2 solid;
 }
 
 .fa-bars {
   box-sizing: border-box;
-  /*border-left: #f2f2f2 2px solid;*/
-  padding: 2rem;
   color: #9EA3AF;
+  padding: 2rem;
 }
 
 .bar-menu {
-  width: 1.25rem;
   padding-left: 1.3rem;
   padding-top: 1.6rem;
+  width: 1.25rem;
 }
 
 .summary-bar {
@@ -667,11 +686,11 @@ main {
 
 .title {
   grid-area: title;
-  padding-left: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 0;
   margin-bottom: 0;
   margin-top: .6rem;
+  padding-bottom: 0;
+  padding-left: 3rem;
+  padding-top: 1rem;
 }
 
 h2 {
@@ -680,9 +699,9 @@ h2 {
 }
 
 .location {
-  padding-top: 0;
-  margin-top: .8rem;
   color: #BBBCC3
+  margin-top: .8rem;
+  padding-top: 0;
 }
 
 .location-pin {
@@ -699,13 +718,18 @@ h2 {
 }
 
 .tabs {
-  grid-area: tabs;
-  display: flex;
-  justify-content: space-between;
   color: #ADAFB5;
+  display: flex;
   font-size: 13px;
+  grid-area: tabs;
+  justify-content: space-between;
   margin-top: 1.3rem;
   width: 78.5%;
+}
+
+.tab:hover {
+  border-bottom: 2px #1c85bd solid;
+  margin-bottom: -2px;
 }
 
 .summary-tab {
@@ -713,32 +737,32 @@ h2 {
 }
 
 .summary-btn {
-  grid-area: summary-btn;
-  float: right;
-  margin-left: 20rem;
   display: flex;
+  float: right;
+  grid-area: summary-btn;
   justify-content: flex-end;
+  margin-left: 20rem;
 }
 
 #bookmark {
+  border-radius: 50%;
+  color: #9EA3AF;
   display: inline;
   height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  margin-top: 2.25rem;
   margin-right: .9rem;
-  color: #9EA3AF;
+  margin-top: 2.25rem;
+  width: 2.5rem;
 
 }
 
 #edit-pencil {
+  border-radius: 50%;
+  color: #9EA3AF;
   display: inline;
   height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  margin-top: 2.25rem;
   margin-right: .9rem;
-  color: #9EA3AF;
+  margin-top: 2.25rem;
+  width: 2.5rem;
 }
 
 .pencil-color {
@@ -746,31 +770,37 @@ h2 {
 }
 
 #trash {
+  border-radius: 50%;
+  color: #9EA3AF;
   display: inline;
   height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  margin-top: 2.25rem;
   margin-right: 2.9rem;
-  color: #9EA3AF;
+  margin-top: 2.25rem;
+  width: 2.5rem;
 }
 
 .oval-summary-icon {
-  /*border-radius: 50%;*/
-  width: 5.8rem;
-  height: 2.5rem;
   border-radius: 40px;
   display: flex
+  height: 2.5rem;
   justify-content: space-between;
-  margin-top: 2.3rem;
   margin-right: .9rem;
+  margin-top: 2.3rem;
+  width: 5.8rem;
+}
+
+.oval-summary-icon:hover {
+  background-color: #9da2ad21;
+}
+
+.sum-icons:hover {
+  background-color: #19a3f8;
+  color: #FFF;
 }
 
 .inline-button {
   display: inline;
   font-size: 12px;
-  color: #;
-
 }
 
 .fa-circle {
@@ -783,11 +813,76 @@ h2 {
 }
 
 .edit {
- display: inline;
+  display: inline;
 }
 
 .pencil {
-  width: 1rem;
-  height: 1rem;
   color: #E7F1FC;
+  height: 1rem;
+  width: 1rem;
+}
+
+/*  MEDIA QUERIES  */
+@media screen and (min-width: 1416px) {
+  
+  body {
+    background-color: #FFF;
+  }
+  
+  .social {
+    display: none;
+  }
+
+  .top-chart {
+    display: block;
+    margin-left: 18rem;
+    width: 60rem;
+  }
+
+  .sum-icons {
+    display: none;
+  }
+
+  .resume {
+    margin-left: 3rem;
+    width: 60rem;
+  }
+
+  .circle-graph {
+    margin-left: -4rem;
+  }
+}
+
+@media screen and (max-width: 1415px) {
+  
+  body {
+    background-color: #FFF;
+  }
+  
+  .social {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .top-chart {
+    display: block;
+    margin-left: 18rem;
+    width: 60rem;
+  }
+
+  .sum-icons {
+    display: none;
+  }
+
+  .resume {
+    margin-left: 3rem;
+    width: 60rem;
+  }
+
+  .circle-graph {
+    margin-left: -4rem;
+  }
 }

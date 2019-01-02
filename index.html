@@ -5,65 +5,28 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hogwarts Vacancy</title>
   </head>
   <body>
     <nav>
-
-
-
-
-
-
-
-
-
-
-
-
       <section class="search-bar">
-
         <article class="flexed">
-
-          <div class="hamburger-and-arrow">
+          <div class="hamburger-and-arrow nav-square">
             <img src="icons/left-arrow.svg" class="left-arrow nav-item">
-
-            <!-- <i class="fas fa-bars"></i> -->
-
             <img src="icons/bar-menu.svg" class="nav-hamburger nav-item" id="nav-menu">
           </div>
-
           <div class="flexed">
             <i class="fas fa-search"></i>
             <input type="nav-search" name="" class="nav-search" placeholder="Search for a job, task or resume">
           </div>
-
         </article>
-
-
         <article class="nav-right">
-          <i class="fas fa-user-plus nav-add-profile"></i>
-          <i class="fas fa-calendar-alt nav-add calendars"></i>
-          <i class="fas fa-th nav-four-buttons"></i>
+          <i class="fas fa-user-plus nav-add-profile nav-square"></i>
+          <i class="fas fa-calendar-alt nav-add calendars nav-square"></i>
+          <i class="fas fa-th nav-four-buttons nav-square"></i>
         </article>
-
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <section class="summary-bar">
         <article class="title">
           <h2>
@@ -77,25 +40,25 @@
           </div>
         </article>
         <article class="tabs">
-          <p class="summary-tab">
+          <p class="summary-tab tab">
             SUMMARY
           </p>
-          <p class="next-tab">
+          <p class="next-tab tab">
             APPLICANTS
           </p>
-          <p class="other-tab">
+          <p class="other-tab tab">
             JOB BOARD
           </p>
-          <p class="other-tab">
+          <p class="other-tab tab">
             INTERVIEWS
           </p>
-          <p class="other-tab">
+          <p class="other-tab tab">
             ACTIVITY
           </p>
-          <p class="other-tab">
+          <p class="other-tab tab">
             BROADCAST 
           </p>
-          <p class="other-tab">
+          <p class="other-tab tab">
             NOTIFICATIONS
           </p>
         </article>
@@ -118,13 +81,6 @@
         </article>
       </section>
     </nav>
-
-
-
-
-
-
-
     <aside>
       <div class="aside-header-flex">
         <section class="aside-header">
@@ -135,67 +91,54 @@
           </article>
         </section>
       </div>
-
-
-
-
-
-
       <section class="aside-main">
-        
         <article class="main-items">
           <p class="main">
           MAIN
         </p>
-          <div class="home">
+          <div class="aside-hover home">
             <img src="icons/aside/home.svg" class="icon">
             <a href="">HOME</a>
           </div>
-          <div class="jobs">
+          <div class="aside-hover jobs">
             <img src="icons/aside/jobs.svg" class="icon">
             <a href="">JOBS</a>
           </div>
-          <div class="resumes">
+          <div class="aside-hover resumes">
             <img src="icons/aside/resume.svg" class="icon">
             <a href="">RESUMES</a>
           </div>
-          <div class="tasks">
+          <div class="aside-hover tasks">
             <img src="icons/aside/tasks.svg" class="icon">
             <a href="">TASKS</a>
           </div>
-          <div class="calendar">
+          <div class="aside-hover calendar">
             <img src="icons/aside/calendar.svg" class="icon">
             <a href="">CALENDAR</a>        
           </div>
       </section>
-
-
-
-
-
-
       <section class="aside-admin">
         <article>
             <p class="admin">
               Admin
             </p>
-          <div class="admin-users">
+          <div class="aside-hover admin-users">
             <img src="icons/aside/users.svg" class="icon">
             <a href="">USERS</a>
           </div>
-          <div class="admin-locations">
+          <div class="aside-hover admin-locations">
             <img src="icons/aside/locations.svg" class="icon">
             <a href="">LOCATIONS</a>
           </div>
-          <div class="admin-workflows">
+          <div class="aside-hover admin-workflows">
             <img src="icons/aside/workflows.svg" class="icon">
             <a href="">WORKFLOWS</a>
           </div>
-          <div class="admin-job-boards">
+          <div class="aside-hover admin-job-boards">
             <img src="icons/aside/jobBoards.svg" class="icon">
             <a href="">JOB BOARDS</a>
           </div>
-          <div class="admin-social">
+          <div class="aside-hover admin-social">
             <img src="icons/aside/social.svg" class="icon">
             <a href="">SOCIAL</a>
           </div>
@@ -206,19 +149,19 @@
         <p class="categories-header">
           Categories
         </p>
-          <div class="categories-administrative">
+          <div class="aside-hover categories-administrative">
             <input type="checkbox">
             <a href="">Administrative</a>
           </div>
-          <div class="categories-design">
+          <div class="aside-hover categories-design">
             <input type="checkbox">
             <a href="">Design</a>
           </div>
-          <div class="categories-executive">
+          <div class="aside-hover categories-executive">
             <input type="checkbox">
             <a href="">Executive</a>
           </div>
-          <div class="categories-hr">
+          <div class="aside-hover categories-hr">
             <input type="checkbox">
             <a href="">Human Resources</a>
           </div>
@@ -227,13 +170,18 @@
     </aside>
     <main>
       <section class="chart">
-        <img src="images/barGraph.png" class="bar-graph">
-        <button class="btn-totals">
+        <article class="top-chart">    
+            <img src="images/circleGraph.png" class="circle-graph">
+            <img src="images/barGraph.png" class="bar-graph">
+        </article>
+        <article class="bottom-chart">
+          <button class="btn-totals total-summary-icon sum-icons">
           TOTALS - Out of 5,231 views
-        </button>
-        <button class="btn-applicants">
-          APPLICANTS/DAY
-        </button>
+          </button>
+          <button class="btn-applicants applicants-summary-icon sum-icons">
+            APPLICANTS/DAY
+          </button>
+        </article>   
       </section>
       <section class="resume">
         <article class="job-description">
@@ -319,18 +267,18 @@
       </section>
       <section class="social">
         <div class="social-buttons">
-          <article class="facebook social-btn social-btns">
+          <a href="www.facebook.com"><article class="facebook social-btn social-btns">
             <i class="fab fa-facebook-f"></i>
             <p class="social-btn post-facebook ">Post to Facebook</p>
-          </article>
-          <article class="twitter social-btn social-btns">
+          </article></a>
+          <a href="www.twitter.com"><article class="twitter social-btn social-btns">
             <i class="fab fa-twitter social-btn"></i>
             <p class="social-btn post-twitter">Tweet this Job</p>
-          </article>
-          <article class="linkedin social-btn social-btns">
+          </article></a>
+          <a href="www.linkedin.com"><article class="linkedin social-btn social-btns">
             <i class="fab fa-linkedin social-btn"></i>
             <p class="social-btn post-linkedin">Post to Linkedin</p>
-          </article>
+          </article></a>
         </div>
         <div class="job-link">
           <p class="job-link-header"> 
