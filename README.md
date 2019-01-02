@@ -28,7 +28,7 @@ I didn't go home for Christmas because I was concerned that I would get out of t
 
 # Screen Grab of the Static Site Created
 
-![_users_jlavar1_documents_turing_projects_static-comp-2_index html 2](https://user-images.githubusercontent.com/40274984/50591413-bc3e1780-0e4c-11e9-85f0-d058eb539012.jpg)
+![_users_jlavar1_documents_turing_projects_static-comp-2_index html](https://user-images.githubusercontent.com/40274984/50591598-c3195a00-0e4d-11e9-8d0d-dbce33d9d4c9.png)
 
 # Shortcomings
 
