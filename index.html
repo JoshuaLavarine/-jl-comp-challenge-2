@@ -9,61 +9,122 @@
   </head>
   <body>
     <nav>
+
+
+
+
+
+
+
+
+
+
+
+
       <section class="search-bar">
-        <article>
+
+        <article class="flexed">
+
           <div class="hamburger-and-arrow">
             <img src="icons/left-arrow.svg" class="left-arrow nav-item">
-            <img src="icons/bar-menu.svg" class="nav-hamburger nav-item">
+
+            <!-- <i class="fas fa-bars"></i> -->
+
+            <img src="icons/bar-menu.svg" class="nav-hamburger nav-item" id="nav-menu">
           </div>
-          <input type="nav-search" name="" class="nav-item nav-search">
+
+          <div class="flexed">
+            <i class="fas fa-search"></i>
+            <input type="nav-search" name="" class="nav-search" placeholder="Search for a job, task or resume">
+          </div>
+
         </article>
-        <article>
-          <img src="icons/add-user-button.svg" class="nav-add-profile nav-item">
-          <img src="icons/add-event.svg" class="nav-add calendar nav-item">
-          <img src="icons/nine-buttons.svg" class="nav-four-buttons nav-item">
+
+
+        <article class="nav-right">
+          <i class="fas fa-user-plus nav-add-profile"></i>
+          <i class="fas fa-calendar-alt nav-add calendars"></i>
+          <i class="fas fa-th nav-four-buttons"></i>
         </article>
+
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <section class="summary-bar">
         <article class="title">
           <h2>
             Care of Magical Creatures Teacher
           </h2>
-          <img src="icons/aside/locations.svg" class="icon">
-          <p>
-            Hogwarts, Scotland, UK - <span>Preview this post</span>
-          </p>
+          <div class="location">
+            <img src="icons/aside/locations.svg" class="icon location-pin">
+            <p>
+              Hogwarts, Scotland, UK <span class="location-hyphen">-</span> <span class="preview-post">Preview this post</span>
+            </p>
+          </div>
         </article>
         <article class="tabs">
-          <p>
+          <p class="summary-tab">
             SUMMARY
           </p>
-          <p>
+          <p class="next-tab">
             APPLICANTS
           </p>
-          <p>
+          <p class="other-tab">
             JOB BOARD
           </p>
-          <p>
+          <p class="other-tab">
             INTERVIEWS
           </p>
-          <p>
+          <p class="other-tab">
             ACTIVITY
           </p>
-          <p>
+          <p class="other-tab">
             BROADCAST 
           </p>
-          <p>
+          <p class="other-tab">
             NOTIFICATIONS
           </p>
         </article>
         <article class="summary-btn">
-          summary-btn1
-          summary-btn2
-          summary-btn3
-          summary-btn4
+          <button class="oval-summary-icon" id="open">
+            <i class="fas fa-circle inline-button"></i>
+            <p class="inline-button">
+              OPEN
+            </p>
+          </button>
+          <button class="round-summary-icon" id="bookmark">
+            <i class="fas fa-bookmark"></i>
+          </button>
+          <button class="round-summary-icon" id="edit-pencil">
+            <i class="fas fa-pencil-alt pencil-color"></i>
+          </button>
+          <button class="round-summary-icon" id="trash">
+            <i class="fas fa-trash-alt"></i>
+          </button>
         </article>
       </section>
     </nav>
+
+
+
+
+
+
+
     <aside>
       <div class="aside-header-flex">
         <section class="aside-header">
@@ -81,10 +142,11 @@
 
 
       <section class="aside-main">
-        <p class="main">
+        
+        <article class="main-items">
+          <p class="main">
           MAIN
         </p>
-        <article class="main-items">
           <div class="home">
             <img src="icons/aside/home.svg" class="icon">
             <a href="">HOME</a>
@@ -113,46 +175,50 @@
 
 
       <section class="aside-admin">
-        Admin
         <article>
-          <div>
+            <p class="admin">
+              Admin
+            </p>
+          <div class="admin-users">
             <img src="icons/aside/users.svg" class="icon">
             <a href="">USERS</a>
           </div>
-          <div>
+          <div class="admin-locations">
             <img src="icons/aside/locations.svg" class="icon">
             <a href="">LOCATIONS</a>
           </div>
-          <div>
+          <div class="admin-workflows">
             <img src="icons/aside/workflows.svg" class="icon">
             <a href="">WORKFLOWS</a>
           </div>
-          <div>
+          <div class="admin-job-boards">
             <img src="icons/aside/jobBoards.svg" class="icon">
             <a href="">JOB BOARDS</a>
           </div>
-          <div>
+          <div class="admin-social">
             <img src="icons/aside/social.svg" class="icon">
             <a href="">SOCIAL</a>
           </div>
         </article>
       </section>
       <section class="aside-categories">
-        Categories
         <article>
-          <div>
+        <p class="categories-header">
+          Categories
+        </p>
+          <div class="categories-administrative">
             <input type="checkbox">
             <a href="">Administrative</a>
           </div>
-          <div>
+          <div class="categories-design">
             <input type="checkbox">
             <a href="">Design</a>
           </div>
-          <div>
+          <div class="categories-executive">
             <input type="checkbox">
             <a href="">Executive</a>
           </div>
-          <div>
+          <div class="categories-hr">
             <input type="checkbox">
             <a href="">Human Resources</a>
           </div>
@@ -161,7 +227,13 @@
     </aside>
     <main>
       <section class="chart">
-        <img src="images/bar-graph.png">
+        <img src="images/barGraph.png" class="bar-graph">
+        <button class="btn-totals">
+          TOTALS - Out of 5,231 views
+        </button>
+        <button class="btn-applicants">
+          APPLICANTS/DAY
+        </button>
       </section>
       <section class="resume">
         <article class="job-description">
@@ -169,7 +241,7 @@
             JOB DESCRIPTION
           </p>
           <div class="edit-btn">
-            <img src="icons/edit.svg" class="icon edit pencil">
+             <i class="fas fa-pencil-alt icon edit pencil"></i>
             <p class="edit">
               EDIT
             </p>
@@ -183,7 +255,7 @@
             Care of Magical Creatures Teacher
           </p> 
         </article> 
-        <article class="location">
+        <article class="location-resume">
           <p class="para-size resume-question">
             LOCATION
           </p>
@@ -242,6 +314,8 @@
             31,250 Galleons (meals and living expenses included)
           </p>
         </article>
+        <div class="filler">  
+        </div>
       </section>
       <section class="social">
         <div class="social-buttons">
@@ -266,12 +340,12 @@
           <p class="job-link-main">
             Draco dormiens nunquam titillandus 
             <p class="job-link-translation">
-              ("Never Tickle a Sleeping  Dragon")
+              ("Never Tickle a Sleeping Dragon")
             </p>
           </p>
           <div class="copy-link">
             <input class="copy-job-link"type="text" name="" placeholder="hogwartsismyhome.co.uk">
-            <button>
+            <button class="copy-btn">
               Copy
             </button>
           </div>
@@ -289,7 +363,7 @@
           </p>
           <div class="copy-link">
             <input class="copy-job-link"type="text" name="" placeholder="hogwartsismyhome.co.uk">
-            <button>
+            <button class="copy-btn">
               Copy
             </button>
           </div>
@@ -307,7 +381,7 @@
           </p>
           <div class="copy-link">
             <input class="copy-job-link"type="text" name="" placeholder="hogwartsismyhome.co.uk">
-            <button>
+            <button class="copy-btn">
               Copy
             </button>
           </div>
