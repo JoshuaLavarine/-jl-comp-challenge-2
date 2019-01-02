@@ -20,7 +20,7 @@ body {
 }
 
 aside {
-  border: 1px black solid;
+  /*border: 1px black solid;*/
   grid-area: aside;
   display: grid;
   grid-template-areas: 
@@ -44,7 +44,8 @@ aside {
 }
 
 .aside-header-flex {
-  height: 5rem;
+  height: 11.3rem;
+  border-bottom: 1px black solid;
 }
 
 .newt-img {
@@ -69,6 +70,10 @@ aside {
 display: inline
 }
 
+.aside-main {
+  height: 19.45rem;
+  border-bottom: 1px solid black;
+}
 /*.aside-main {
   grid-area: aside-main;
   display: grid;
@@ -137,6 +142,8 @@ display: inline
 .aside-admin {
   grid-area: aside-admin;
   margin-top: 6.4rem;
+  height: 16rem;
+  border-bottom: 1px solid black;
 }
 
 .admin {
@@ -227,8 +234,12 @@ a {
   color: #9EA9BB;
 }
 
+a:hover {
+  color: #FFF;
+}
+
 nav {
-  border: 1px black solid;
+  /*border: 1px black solid;*/
   grid-area: nav;
   display: grid;
   grid-template-areas: 
@@ -239,7 +250,7 @@ nav {
 }
 
 main {
-  border: 1px black solid;
+  /*border: 1px black solid;*/
   display: grid;
   grid-area: main;
   grid-template-areas: 
@@ -248,25 +259,65 @@ main {
     "resume social";
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 34.25%;
-  /*background-color: #EDF2F6;*/
+  background-color: #EDF2F6;
   color: #9DA1A8;
 }
 
 .chart {
-  border: 1px black solid;
+  /*border: 1px green solid;*/
   grid-area: chart;
-  display: flex;
+  /*display: flex;*/
   /*background-color: #EDF2F6;*/
-  height: 100%;
-  width: 100%;
-  justify-content: flex-end;
+  /*height: 100%;*/
+  /*width: 100%;*/
+  /*justify-content: flex-end;*/
+}
+
+.bottom-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+
+}
+
+.top-chart {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+
+.applicants-summary-icon {
+  width: 9.4rem;
+  height: 2.3rem;
+  border-radius: 40px;
+  margin-right: 11rem;
+  font-size: 12px;
+}
+
+.total-summary-icon {
+  width: 13rem;
+  height: 2.3rem;
+  border-radius: 40px;
+  margin-left: 12.75rem;
+  font-size: 12px;
 }
 
 .bar-graph {
   width: auto;
-  height: 260px;
-  margin-right: .3rem;
-  margin-bottom: .3rem;
+  height: 15rem;
+  margin-bottom: 1.2rem;
+  margin-right: 3.4rem;
+}
+
+.circle-graph {
+  width: auto;
+  height: 14.1rem;
+  margin-bottom: 1.2rem;
+  margin-left: 0rem;
 }
 
 .resume {
@@ -327,7 +378,7 @@ main {
   padding: .5rem;
   height: 1rem;
   margin-top: 1rem;
-}
+} 
 
 .position-title {
   grid-area: position-title;
@@ -388,18 +439,20 @@ main {
   grid-area: description;
   display: flex;
   padding-top: 1.5rem;
-  border-bottom: 2px #F3F3F3 solid;
-  height: 10rem;
+  /*border-bottom: 2px #F3F3F3 solid;*/
+  /*height: 10rem;*/
   padding-left: 2rem;
   background-color: #FFF;
+  border-bottom: 2px #F3F3F3 solid;
+  padding-bottom: 7rem;
+  /*margin-bottom: 9rem;*/
 }
 
 .hiring-lead {
   display: flex;
   grid-area: hiring-lead;
-  padding-top: 3.2rem;
+  padding-top: 1rem;
   border-bottom: 2px #F3F3F3 solid;
-  height: 4rem;
   padding-left: 2rem;
   background-color: #FFF;
 }
@@ -419,8 +472,8 @@ main {
 .approved-salary {
   grid-area: approved-salary;
   display: flex;
-  padding-top: 4rem;
-  border-bottom: 2px #F3F3F3 solid; 
+  padding-top: 1.6rem;
+  border-bottom: 2px #F3F3F3 solid;
   height: 3rem;
   padding-left: 2rem;
   background-color: #FFF;
@@ -523,7 +576,11 @@ main {
   margin-top: .4rem;
   font-size: 13px;
   margin-bottom: 1.5rem;
+}
 
+.aside-hover:hover {
+  background-color: #2F394A;
+  border-left: 2px solid #1C85BD;
 }
 
 .copy-link {
@@ -586,6 +643,7 @@ main {
 .nav-four-buttons {
   box-sizing: border-box;
   border-left: #f2f2f2 2px solid;
+  border-right: #f2f2f2 2px solid;
   padding: 2rem;
   color: #9EA3AF;
 }
@@ -604,6 +662,14 @@ main {
   color: #9EA3AF;
 }
 
+.nav-square:hover {
+  background-color: #19a3f8;
+  color: #FFF;
+}
+
+.round-summary-icon:hover {
+  background-color: #9da2ad21;
+}
 
 .nav-search {
   width: 20rem;
@@ -708,6 +774,11 @@ h2 {
   width: 78.5%;
 }
 
+.tab:hover {
+  border-bottom: 2px #1c85bd solid;
+  margin-bottom: -2px;
+}
+
 .summary-tab {
   margin-left: 3rem;
 }
@@ -766,11 +837,18 @@ h2 {
   margin-right: .9rem;
 }
 
+.oval-summary-icon:hover {
+  background-color: #9da2ad21;
+}
+
+.sum-icons:hover {
+  background-color: #19a3f8;
+  color: #FFF;
+}
+
 .inline-button {
   display: inline;
   font-size: 12px;
-  color: #;
-
 }
 
 .fa-circle {
@@ -791,3 +869,6 @@ h2 {
   height: 1rem;
   color: #E7F1FC;
 }
+
+/*MEDIA QUERIES*/
+
