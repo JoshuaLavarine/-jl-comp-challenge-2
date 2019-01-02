@@ -36,6 +36,6 @@ This is a repeated shortcoming: I believe that I focused too much time on my pai
 
 # Credits
 
-http://frontend.turing.io/projects/m1-static-comp-1.html
+http://frontend.turing.io/projects/m1-static-comp-2.html
 
 -=-=-= Joshua Lavarine =-=-=-
