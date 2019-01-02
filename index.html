@@ -23,21 +23,28 @@
 
       <section class="search-bar">
 
-        <article>
+        <article class="flexed">
 
-          <!-- <div class="hamburger-and-arrow"> -->
+          <div class="hamburger-and-arrow">
             <img src="icons/left-arrow.svg" class="left-arrow nav-item">
-            <img src="icons/bar-menu.svg" class="nav-hamburger nav-item">
-          <!-- </div> -->
 
-          <input type="nav-search" name="" class="nav-search">
+            <!-- <i class="fas fa-bars"></i> -->
+
+            <img src="icons/bar-menu.svg" class="nav-hamburger nav-item" id="nav-menu">
+          </div>
+
+          <div class="flexed">
+            <i class="fas fa-search"></i>
+            <input type="nav-search" name="" class="nav-search" placeholder="Search for a job, task or resume">
+          </div>
+
         </article>
 
 
-        <article>
-          <img src="icons/add-user-button.svg" class="nav-add-profile nav-item">
-          <img src="icons/add-event.svg" class="nav-add calendar nav-item">
-          <img src="icons/nine-buttons.svg" class="nav-four-buttons nav-item">
+        <article class="nav-right">
+          <i class="fas fa-user-plus nav-add-profile"></i>
+          <i class="fas fa-calendar-alt nav-add calendars"></i>
+          <i class="fas fa-th nav-four-buttons"></i>
         </article>
 
       </section>
@@ -237,7 +244,7 @@
             Care of Magical Creatures Teacher
           </p> 
         </article> 
-        <article class="location">
+        <article class="location-resume">
           <p class="para-size resume-question">
             LOCATION
           </p>

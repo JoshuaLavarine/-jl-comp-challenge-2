@@ -6,7 +6,7 @@
 }
 
 body {
-  /*background-image: url("back-placeholder1.png");*/
+  background-image: url("back-placeholder1.png");
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas:
@@ -147,20 +147,21 @@ main {
 
 .resume {
   border: 1px black solid;
+  background-color: #EEF0F2;
   grid-area: resume;
   display: grid;
   grid-template-areas: 
-    ". job-description"
-    ". position-title"
-    ". location"
-    ". employment-type"
-    ". experience"
-    ". status"
-    ". description"
-    ". hiring-lead"
-    ". approved-salary";
+    ". job-description job-description job-description"
+    ". position-title  position-title  ."
+    ". location        location        ."
+    ". employment-type employment-type ."
+    ". experience      experience      ."
+    ". status          status          ."
+    ". description     description     ."
+    ". hiring-lead     hiring-lead     ."
+    ". approved-salary approved-salary .";
   grid-template-rows: repeat(6, 4.6rem) 9rem repeat(2, 4.6rem); 
-  grid-template-columns: 5.3rem 1fr;
+  grid-template-columns: 3.15rem 1rem 1fr 2rem;
 }
 
 .para-size {
@@ -182,21 +183,30 @@ main {
 .job-description {
   grid-area: job-description;
   display: flex;
-  padding-top: 1.5rem;
-  border: 1px black solid;
   background-color: #6E7E95;
-  color: #E7F1FC
+  color: #E7F1FC;
 }
 
 .job-title {
-  margin-right: 1.5rem;
+  margin-right: .75rem;
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+
+.edit-btn {
+  background-color: #7B8AA6;
+  padding: .5rem;
+  height: 1rem;
+  margin-top: 1rem;
 }
 
 .position-title {
   grid-area: position-title;
   display: flex;
   padding-top: 1.5rem;
-
+  border-bottom: 2px #F3F3F3 solid;
+  padding-left: 2rem;
+  background-color: #FFF;
 }
 
 .hiring {
@@ -209,34 +219,60 @@ main {
   padding-top: 1.5rem;
 }
 
+.location-resume {
+  grid-area: location;
+  display: flex;
+  padding-top: 1.5rem;
+  border-bottom: 2px #F3F3F3 solid;
+  padding-left: 2rem;
+  background-color: #FFF;
+}
+
 .employment-type {
   grid-area: employment-type;
   display: flex;
   padding-top: 1.5rem;
+  border-bottom: 2px #F3F3F3 solid;
+  padding-left: 2rem;
+  background-color: #FFF;
 }
 
 .experience {
   grid-area: experience;
   display: flex;
   padding-top: 1.5rem;
+  border-bottom: 2px #F3F3F3 solid;
+  padding-left: 2rem;
+  background-color: #FFF;
 }
 
 .status {
   grid-area: status;
   display: flex;
   padding-top: 1.5rem;
+  border-bottom: 2px #F3F3F3 solid;
+  padding-left: 2rem;
+  background-color: #FFF;
 }
 
 .description {
   grid-area: description;
   display: flex;
   padding-top: 1.5rem;
+  border-bottom: 2px #F3F3F3 solid;
+  height: 10rem;
+  padding-left: 2rem;
+  background-color: #FFF;
 }
 
 .hiring-lead {
   display: flex;
   grid-area: hiring-lead;
   padding-top: 3.2rem;
+  border-bottom: 2px #F3F3F3 solid;
+  height: 4rem;
+  padding-left: 2rem;
+  background-color: #FFF;
 }
 
 .albus-img {
@@ -255,6 +291,10 @@ main {
   grid-area: approved-salary;
   display: flex;
   padding-top: 4rem;
+  border-bottom: 2px #F3F3F3 solid; 
+  height: 3rem;
+  padding-left: 2rem;
+  background-color: #FFF;
 }
 
 .social {
@@ -398,33 +438,87 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .nav-item {
   width: 2rem;
   height: 2rem;
+  /*padding-top: 1rem;*/
 }
 
 .nav-hamburger {
   width: 1.25rem;
-  padding-left: 1.3rem;
 }
 
+.nav-right {
+  display: flex;
+}
+
+.nav-four-buttons {
+  box-sizing: border-box;
+  border-left: #f2f2f2 2px solid;
+  padding: 2rem;
+  color: #9EA3AF;
+}
+
+.calendars {
+  box-sizing: border-box;
+  border-left: #f2f2f2 2px solid;
+  padding: 2rem;
+  color: #9EA3AF;
+}
+
+.nav-add-profile {
+  box-sizing: border-box;
+  border-left: #f2f2f2 2px solid;
+  padding: 2rem;
+  color: #9EA3AF;
+}
+
+
 .nav-search {
-  width: 50.275rem;
-  margin-left: 1.65rem;
+  width: 20rem;
+  margin-left: 0rem;
+  padding-left: .3rem;
   height: 5rem;
+  display: flex;
+  border: none;
+  background-color: #FEFEFE; 
+}
+
+.fa-search {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  color: #9EA3AF;
+  /*border: 1px #9EA3AF solid;*/
+  /*width: 5rem;*/
+  padding: 1.65rem .1rem 1.65rem 1.65rem;
+  border: none;
+  background-color: #FFF;
+;
 }
 
 .left-arrow {
   width: .4rem;
 }
 
+.flexed {
+  display: flex;
+}
+
 .hamburger-and-arrow {
-  width: 100%;
-  padding-left: 1.3rem;
+  padding-left: 1.6rem;
+  /* margin-right: 1.5rem; */
+  padding-right: 1.6rem;
   padding-top: 1.6rem;
+  border-right: 1px #9EA3AF solid;
+}
+
+.fa-bars {
+  box-sizing: border-box;
+  /*border-left: #f2f2f2 2px solid;*/
+  padding: 2rem;
+  color: #9EA3AF;
 }
 
 .bar-menu {
