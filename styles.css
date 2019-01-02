@@ -372,6 +372,10 @@ main {
   padding-top: 1.5rem;
 }
 
+.hogwarts {
+  color: #c1c1c1;
+}
+
 .employment-type {
   background-color: #FFF;
   border-bottom: 2px #F3F3F3 solid;
@@ -786,7 +790,8 @@ h2 {
   justify-content: space-between;
   margin-right: .9rem;
   margin-top: 2.3rem;
-  width: 5.8rem;
+  width: 7rem;
+  margin-bottom: 2rem;
 }
 
 .oval-summary-icon:hover {
@@ -820,69 +825,4 @@ h2 {
   color: #E7F1FC;
   height: 1rem;
   width: 1rem;
-}
-
-/*  MEDIA QUERIES  */
-@media screen and (min-width: 1416px) {
-  
-  body {
-    background-color: #FFF;
-  }
-  
-  .social {
-    display: none;
-  }
-
-  .top-chart {
-    display: block;
-    margin-left: 18rem;
-    width: 60rem;
-  }
-
-  .sum-icons {
-    display: none;
-  }
-
-  .resume {
-    margin-left: 3rem;
-    width: 60rem;
-  }
-
-  .circle-graph {
-    margin-left: -4rem;
-  }
-}
-
-@media screen and (max-width: 1415px) {
-  
-  body {
-    background-color: #FFF;
-  }
-  
-  .social {
-    display: none;
-  }
-
-  aside {
-    display: none;
-  }
-
-  .top-chart {
-    display: block;
-    margin-left: 18rem;
-    width: 60rem;
-  }
-
-  .sum-icons {
-    display: none;
-  }
-
-  .resume {
-    margin-left: 3rem;
-    width: 60rem;
-  }
-
-  .circle-graph {
-    margin-left: -4rem;
-  }
 }
