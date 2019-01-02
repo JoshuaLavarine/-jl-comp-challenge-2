@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("back-placeholder1.png");
+  /*background-image: url("back-placeholder1.png");*/
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas:
@@ -28,7 +28,7 @@ aside {
     "aside-main"
     "aside-admin"
     "aside-categories";
-  grid-template-rows: 13rem 18rem 18rem 13rem
+  grid-template-rows: 9.3rem 15rem 24rem 1fr;
   background: #354051;
 }
 
@@ -41,6 +41,10 @@ aside {
   grid-template-columns: 3rem 1fr 3rem;
   padding-top: 2.2rem;
   padding-left: .5rem;
+}
+
+.aside-header-flex {
+  height: 5rem;
 }
 
 .newt-img {
@@ -65,7 +69,7 @@ aside {
 display: inline
 }
 
-.aside-main {
+/*.aside-main {
   grid-area: aside-main;
   display: grid;
   grid-template-areas: 
@@ -76,39 +80,151 @@ display: inline
     ".  tasks"
     ".  calendar";
   grid-template-columns: 1.5rem 1fr;
+  grid-template-rows: 1.2fr 2fr 2fr 2fr 2fr 2fr;
+}*/
+
+.main {
+  font-size: 12px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  /*border: 1px black solid;*/
+  display: block;
+  margin-top: 3.7rem;
+  color: #9EA9BB;
 }
 
 .home {
   grid-area: home;
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
 }
 
 .jobs {
   grid-area: jobs;
+    display: flex;
+
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+
 }
 
 .resumes {
   grid-area: resumes;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+    display: flex;
+
+
 }
 
 .tasks {
   grid-area: tasks;
+    display: flex;
+
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
 }
 
 .calendar {
   grid-area: calendar;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+    display: flex;
+
 }
 
 .aside-admin {
   grid-area: aside-admin;
+  margin-top: 6.4rem;
+}
+
+.admin {
+  font-size: 12px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  /*border: 1px black solid;*/
+  display: block;
+  margin-top: 0rem;
+  color: #9EA9BB;
+}
+
+.admin-users {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.admin-locations {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.admin-workflows {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.admin-job-boards {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.admin-social {
+    display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
 }
 
 .aside-categories {
   grid-area: aside-categories;
 }
 
+.categories-header {
+  font-size: 12px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  /*border: 1px black solid;*/
+  display: block;
+  margin-top: 0.4rem;
+  color: #9EA9BB;
+}
+
+.categories-administrative {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.categories-design {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.categories-executive {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.categories-hr {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+
+
 a {
   text-decoration: none;
   font-size: 12px;
+  padding-top: .2rem;
+  margin-left: .8rem;
+  color: #9EA9BB;
 }
 
 nav {
@@ -132,36 +248,49 @@ main {
     "resume social";
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 34.25%;
-  color: #9DA1A8
+  /*background-color: #EDF2F6;*/
+  color: #9DA1A8;
 }
 
 .chart {
   border: 1px black solid;
   grid-area: chart;
   display: flex;
+  /*background-color: #EDF2F6;*/
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .bar-graph {
-  width: 32rem;
+  width: auto;
+  height: 260px;
+  margin-right: .3rem;
+  margin-bottom: .3rem;
 }
 
 .resume {
-  border: 1px black solid;
+  /*border: 1px black solid;*/
   background-color: #EEF0F2;
   grid-area: resume;
   display: grid;
   grid-template-areas: 
     ". job-description job-description job-description"
-    ". position-title  position-title  ."
-    ". location        location        ."
-    ". employment-type employment-type ."
-    ". experience      experience      ."
-    ". status          status          ."
-    ". description     description     ."
-    ". hiring-lead     hiring-lead     ."
-    ". approved-salary approved-salary .";
-  grid-template-rows: repeat(6, 4.6rem) 9rem repeat(2, 4.6rem); 
+    ". position-title  position-title  filler"
+    ". location        location        filler"
+    ". employment-type employment-type filler"
+    ". experience      experience      filler"
+    ". status          status          filler"
+    ". description     description     filler"
+    ". hiring-lead     hiring-lead     filler"
+    ". approved-salary approved-salary filler";
+  grid-template-rows: repeat(6, 4.6rem) 9rem 4.6rem 4.6rem; 
   grid-template-columns: 3.15rem 1rem 1fr 2rem;
+}
+
+.filler {
+  background-color: #FFF;
+  grid-area: filler;
 }
 
 .para-size {
@@ -511,7 +640,7 @@ main {
   /* margin-right: 1.5rem; */
   padding-right: 1.6rem;
   padding-top: 1.6rem;
-  border-right: 1px #9EA3AF solid;
+  border-right: 1px #f2f2f2 solid;
 }
 
 .fa-bars {
@@ -528,7 +657,7 @@ main {
 }
 
 .summary-bar {
-  border: black 1px solid;
+  border: 1px #F2F2F2 solid;
   display: grid;
   grid-template-areas: 
     ".     ."
