@@ -24,11 +24,11 @@ I didn't go home for Christmas because I was concerned that I would get out of t
 
 # Screen Grab of Static Comp Provided
 
-<img width="665" alt="comp1-screenshot" src="https://user-images.githubusercontent.com/40274984/49852793-5953e600-fda2-11e8-82c3-f9ad1a19573f.png">
+![static-comp-challenge-3](https://user-images.githubusercontent.com/40274984/50591386-9c0e5880-0e4c-11e9-88dd-b1119b0e38a9.jpg)
 
 # Screen Grab of the Static Site Created
 
-![lavarine-comp1-screenshot](https://user-images.githubusercontent.com/40274984/49852839-7b4d6880-fda2-11e8-9260-ca5e48d71bb3.png)
+![_users_jlavar1_documents_turing_projects_static-comp-2_index html 2](https://user-images.githubusercontent.com/40274984/50591413-bc3e1780-0e4c-11e9-85f0-d058eb539012.jpg)
 
 # Shortcomings
 
